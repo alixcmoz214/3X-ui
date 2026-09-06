@@ -3,7 +3,7 @@ FROM ghcr.io/mhsanaei/3x-ui:v2.9.4
 ENV TZ=Asia/Tehran
 
 COPY start.sh /start.sh
-COPY custom/subscription /opt/3x-ui/subscription
+COPY subscription.html /opt/3x-ui/subscription/subscription.html
 
 RUN chmod +x /start.sh
 
